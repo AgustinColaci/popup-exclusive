@@ -1,0 +1,112 @@
+@font-face {
+    font-family: miller;
+    src: url("../font/miller.otf");
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.card {
+    position:fixed;
+    z-index:100;
+}
+
+.card-body {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    height: 250px;
+    width: 350px;
+    position: fixed;    
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+
+h1 {
+    font-family: miller;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 2rem;
+    line-height: 2.64rem;
+    color: black;
+    width: auto;
+    padding: 1rem;
+}
+
+.btn-dangers {
+    border-radius: 3px;
+    border-radius: 3px;
+    background: #739973;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'miller', sans-serif;
+    font-weight: 500;    
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 43px;
+    width: 95px;
+    border-radius: 3px;
+
+}
+
+.circulo-verde {
+    color:#739973;
+}
+.far {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "title cruz"
+                         "formulario boton";
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+}
+
+.cruz {
+    grid-area: cruz;
+    justify-self: flex-end;
+}
+
+.formulario {
+    grid-area: formulario;
+    align-self: flex-start;
+}
+
+.boton {
+    grid-area: boton;
+    align-self: flex-end;
+    margin-bottom: 1.6rem;
+}
+
+input#exampleFormControlInput1.form-control.input-form {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    color: #8B8B8B;
+    margin-top: 1rem;
+    font-family: miller;
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+}
+
